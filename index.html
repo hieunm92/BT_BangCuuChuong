@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sinh Bảng Cửu Chương</title>
+</head>
+<body>
+<h1 align="center"> BẢNG CỬU CHƯƠNG </h1>
+<table id="bang" border=""> </table>
+    <script>
+        let html='';
+        let i;
+        let j;
+        for (i = 1; i < 10; i++ ){
+            html += '<tr>';
+            for(j = 1; j < 10; j++){
+                html +='<td>';
+                A= j * i
+                html += (j + ' x ' + i +' = ' + A + '<br>');
+                html += '</td>'
+            }
+            html += '</tr>'
+
+        }
+        document.getElementById('bang').innerHTML = html
+    </script>
+
+</body>
+</html>
